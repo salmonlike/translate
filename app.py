@@ -4,6 +4,7 @@ from langchain.prompts.chat import ChatPromptTemplate
 import os
 
 # OpenAIのAPIキーを環境変数から取得
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 chat = ChatOpenAI(api_key=openai_api_key, model="gpt-3.5-turbo")
 
 prompt = ChatPromptTemplate.from_template(
