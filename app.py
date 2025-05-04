@@ -4,7 +4,7 @@ from langchain.prompts.chat import ChatPromptTemplate
 import os
 
 # OpenAIのAPIキーを環境変数から取得
-chat = ChatOpenAI(api_key=OPENAI_API_KEY, model="gpt-3.5-turbo")
+chat = ChatOpenAI(api_key=openai_api_key, model="gpt-3.5-turbo")
 
 prompt = ChatPromptTemplate.from_template(
     "Translate this text from {source_lang} to {target_lang}: {text}"
